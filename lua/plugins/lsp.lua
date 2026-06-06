@@ -13,10 +13,12 @@ vim.diagnostic.config { virtual_text = true }
 -- Set LSP servers and formatters
 local servers = {
   'lua_ls',
+  'nil_ls',
 }
 
 local formatters = {
   lua = { 'stylua' },
+  nix = { 'alejandra' },
 }
 
 -- Completions and snippets
